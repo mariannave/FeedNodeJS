@@ -7,5 +7,5 @@ app.set('views', './app/views');
 
 
 // Load Routes and Load Database Connection
-consign().include('app/routes').then('config/dbConnection.js').into(app);
+consign().include('app/routes').then('config/dbConnection.js').then('app/models').into(app);
 module.exports = app;
